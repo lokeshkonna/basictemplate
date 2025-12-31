@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(black,orange,green);
+    background-repeat:repeat-x;
+}
+/* .maindiv{
+    background: linear-gradient(black,white);
+    background-repeat:repeat-x; 
+    
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+ 
+    color: whitesmoke;
+    align-items: center;
+    margin-top: 10px;
+    margin-top:20px;
+}
+#navlist{
+    list-style: none;
+    display: flex;
+    margin-right: 140px;
+    align-items: center;
+    gap: 80px;
+    font-size: 20px;
+    color: whitesmoke;
+    gap: 40px;
+    font-family: "Roboto Mono", monospace;
+}
+.fa-bars{
+    display: none;
+}
+@media screen and (max-width:480px){
+    #navlist{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
+
+
+.cursor{
+    background-color: rgb(256,256,256,0.07);
+    padding: 10px;
+    border-radius: 5px;
+}
+.cursor:hover{
+    cursor: pointer;
+}
+#navlist button{
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    background-color: #FE4D5F;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+}
+.font{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+}
+i{
+    font-size: 10px;
+}
+.live{
+    color: white;
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    justify-content: center;
+    border-radius:25px ;
+    width: 15%;
+    margin-left: 600px;
+    margin-top: 80px;
+    padding: 10px;
+}
+.pagetitle{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    font-family: "BBH Bartle", sans-serif;
+    margin-top:70px;
+    line-height: 1.5;
+}
+.gradii{
+    background:linear-gradient(orange,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.note{
+    color: white;
+    text-align: center;
+    margin-top:30px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.timer{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.timebox{
+    font-family: "BBH Bartle", sans-serif;
+    width:13%;
+    color: white;
+    height: 140px;
+    background-color: rgb(256,256,256,0.07);
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.7;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.timebox:hover{
+    transform: scale(1.1);
+}
+.colon{
+    color: white;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.timing{
+    color: white;
+}
